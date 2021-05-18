@@ -1,0 +1,47 @@
+.card{
+    min-height: 400px;
+}
+.card-body h1{
+    font-family: fantasy;
+    color:#0069d9;
+}
+.font-highlight{
+    font-style: italic;
+    color: red;
+}
+.card-img-wrapper{
+    overflow: hidden;
+    position: relative;
+
+}
+.card:hover img{
+    transform: scale(1.2,1.2);
+    transition: 500ms;
+    transition-timing-function: ease-in;
+    opacity: .5;
+    height: 200px;
+}
+.card img{
+    transform: scale(1,1);
+    transition: 500ms;
+    transition-timing-function: ease-out;
+    height: 200px;
+   
+}
+.member-icons{
+    position: absolute;
+    bottom: -10%;           /*the buttons are completely hidden*/
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    
+}
+.card-img-wrapper:hover .member-icons{
+    bottom: 0;              /*the buttons are appears now after hover*/
+    opacity: 1;
+}
+.animate{
+    transition: all 0.3s ease-in-out;       /*animate the buttons*/
+}  
